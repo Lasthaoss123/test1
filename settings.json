@@ -1,0 +1,34 @@
+{
+  // GLOBAL.
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "git.enabled": false,
+
+  // THEME.
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+
+  //EDITOR.
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.letterSpacing": 1,
+  "editor.lineHeight": 25,
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.autoIndent": true,
+  "editor.renderWhitespace": "none",
+  "editor.wordWrap": "off",
+
+  // PRETTIER.
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.tslintIntegration": true,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "workbench.startupEditor": "newUntitledFile",
+  "files.autoSave": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
