@@ -1,0 +1,14 @@
+function treeTable(array, nadrzedny) {
+	var data = [];
+  for(var i in array) {
+  	if(array[i].nadrzedny == nadrzedny) {
+      var children = treeTable(array, array[i].id);
+      if(children.length) {
+      	array[i].children = children;
+      }
+      data.push(array[i]);
+    }
+  }
+  console.log(data, 'data');
+  return data;
+}
