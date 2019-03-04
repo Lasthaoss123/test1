@@ -12,3 +12,5 @@ function treeTable(array, nadrzedny) {
   console.log(data, 'data');
   return data;
 }
+
+http://oskarhane.com/create-a-nested-array-recursively-in-javascript/
