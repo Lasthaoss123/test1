@@ -14,3 +14,23 @@ function treeTable(array, nadrzedny) {
 }
 
 http://oskarhane.com/create-a-nested-array-recursively-in-javascript/
+
+
+  public selectedNodes(): void {
+    for(const akceptacja of this.akceptacje) {
+      const nadrzedna = this.flatList.find(obj => obj.id === akceptacja.nadrzedna);
+      nadrzedna !== undefined && this.akceptacje.findIndex(obj => obj.id === nadrzedna.id) === -1 ? this.akceptacje.push(nadrzedna) : null;
+
+      if(akceptacja.podrzedne) {
+        const podrzedna = this.flatList.find(obj => obj.nadrzedna === akceptacja.id);
+        podrzedna !== undefined && this.akceptacje.findIndex(obj => obj.id === podrzedna.id) === -1 ? this.akceptacje.push(podrzedna) : null;
+      }
+    }
+    console.log(this.akceptacje);
+  }
+
+  findNode(node) {
+    this.selectedNodes();
+
+    return this.akceptacje.findIndex(obj => obj.id === node.id) > - 1 ? true : false;
+  }
